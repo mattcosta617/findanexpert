@@ -11,7 +11,7 @@ def about (request):
     return render(request, 'about.html')
 
 def experts_index (request):
-    return render(request, 'experts/index.html')
+    return render(request, 'experts/index.html', {'experts': experts})
 
 
 class Expert:  # Note that parens are optional if not inheriting from another class
