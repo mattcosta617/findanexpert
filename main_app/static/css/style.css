@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgba(196, 255, 242, 0.74)
+  }
+
+nav {
+    background-color: rgba(128, 253, 226, 0.74);
+    font-family: sans;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 0.1em;
+}
+  
+  main {
+    flex: 1 0 auto;
+  }
+  
+  footer {
+    padding-top: 0;
+    text-align: right;
+  }
+
+  .page-footer {
+    background-color: rgba(128, 253, 226, 0.74);
+    font-family: sans;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 0.2em;
+}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+</head>
+<body>
+
+
+    <h1>Here Are Our Experts!</h1>
+    <hr />
+
+{% for expert in experts %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ expert.name }}</span>
+      <p>Location: {{ expert.location }}</p>
+      <p>Description: {{ expert.description }}</p>
+      {% if expert.age > 0 %}
+        <p>Age: {{ expert.age }}</p>
+      {% else %}
+        <p>Age: N/A</p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+</body>
+{% endblock %}
+</html>
